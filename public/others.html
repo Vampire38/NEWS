@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Other Blogs - NEWS ADDA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- ✅ Top Bar -->
+    <div class="top-bar">
+      <div class="date" id="liveDate"></div>
+      <div class="live-signin">
+        <span class="live">•LIVE</span>
+        <button class="signin-btn" onclick="window.location.href='login.html'">
+          SIGNIN/LOGIN
+        </button>
+        <div class="profile-container">
+          <img src="img/profile.png" alt="Profile" class="profile-icon" onclick="openSidebar()">
+        </div>
+      </div>
+    </div>
+
+    <!-- ✅ Sidebar -->
+    <div id="sidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+      <h3>User Menu</h3>
+      <ul>
+        <li><a href="#">My Profile</a></li>
+        <li><a href="add.html">Add Post</a></li>
+        <li><a href="#">Manage Post</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </div>
+
+    <!-- ✅ Navigation -->
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="trending.html">TRENDING BLOGS</a></li>
+        <li><a href="sports.html">SPORTS</a></li>
+        <li><a href="travel.html">TRAVEL</a></li>
+        <li><a href="technology.html">TECHNOLOGY</a></li>
+        <li><a href="others.html" class="active-link">OTHER</a></li>
+      </ul>
+    </nav>
+
+    <!-- ✅ Section Heading -->
+    <div class="section-heading">
+      <h2>OTHER BLOGS</h2>
+    </div>
+
+    <!-- ✅ Main Content -->
+    <main>
+      <!-- Left Column -->
+      <div class="left-column">
+        <!-- Featured Blog -->
+        <div class="main-article">
+          <h3>📚 Exploring Unusual Topics the World Rarely Talks About</h3>
+          <p>From the history of forgotten languages to the psychology behind rare habits, 
+             we dive into fascinating stories that don’t always make the headlines but 
+             definitely deserve attention...</p>
+        </div>
+
+        <!-- Other Blog Grid -->
+        <div class="recent-grid">
+          <div class="news-card">
+            <div class="news-image"></div>
+            <div class="news-content">
+              <h3>OTHER #1</h3>
+              <h4>10 Forgotten Traditions from Around the World</h4>
+            </div>
+          </div>
+
+          <div class="news-card">
+            <div class="news-image"></div>
+            <div class="news-content">
+              <h3>OTHER #2</h3>
+              <h4>The Mysterious World of Deep-Sea Creatures</h4>
+            </div>
+          </div>
+
+          <div class="news-card">
+            <div class="news-image"></div>
+            <div class="news-content">
+              <h3>OTHER #3</h3>
+              <h4>Unusual Inventions That Changed Daily Life</h4>
+            </div>
+          </div>
+
+          <div class="news-card">
+            <div class="news-image"></div>
+            <div class="news-content">
+              <h3>OTHER #4</h3>
+              <h4>The Science Behind Strange Superstitions</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Advertisement -->
+        <div class="advertisement">
+          <div class="ad-content">ADVERTISEMENT</div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="right-column">
+        <!-- Side Blog List -->
+        <div class="top-news-list">
+          <div class="news-card">
+            <div class="news-image"></div>
+            <div class="news-content">
+              <h3>OTHER #5</h3>
+              <h4>Weird Foods People Actually Love</h4>
+            </div>
+          </div>
+
+          <div class="news-card">
+            <div class="news-image"></div>
+            <div class="news-content">
+              <h3>OTHER #6</h3>
+              <h4>Unexplored Islands Around the Globe</h4>
+            </div>
+          </div>
+
+          <div class="news-card">
+            <div class="news-image"></div>
+            <div class="news-content">
+              <h3>OTHER #7</h3>
+              <h4>Hidden Stories from Forgotten Cities</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Side Advertisement -->
+        <div class="advertisement2">
+          <div class="ad-content">ADVERTISEMENT</div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ✅ Social Media Section -->
+    <div class="social-media">
+      <h3>JOIN US ON</h3>
+      <div class="social-icons">
+        <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="img/Instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="img/youtube.png" alt="Youtube"></a>
+      </div>
+    </div>
+
+    <!-- ✅ Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h4>NEWS ADDA</h4>
+          <p>Your home for quirky, rare, and interesting topics that spark curiosity.</p>
+        </div>
+        <div class="footer-center">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <h4>Contact Us</h4>
+          <p>Email: newsadda@gmail.com</p>
+          <p>Phone: +91 98765 43210</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 NEWS ADDA. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

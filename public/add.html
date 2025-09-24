@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogpost</title>
+  <link rel="stylesheet" href="css/add.css">
+</head>
+<body>
+
+  <a href="index.html" class="home-btn">← Home</a>
+
+  <div class="post-form">
+    <h2>Add New Blog Post</h2>
+
+    <!-- ✅ FORM SENDS DATA TO NODE.JS SERVER -->
+    <form action="http://localhost:3000/save-post" method="POST" enctype="multipart/form-data">
+
+      <!-- Thumbnail Upload -->
+      <div class="form-group">
+        <label for="thumbnail">Thumbnail Image</label>
+        <input type="file" id="thumbnail" name="thumbnail" accept="image/*" required>
+      </div>
+
+      <!-- Blog Topic -->
+      <div class="form-group">
+        <label for="blog-title">Blog Topic</label>
+        <input type="text" id="blog-title" name="blog-title" placeholder="Enter blog title" required>
+      </div>
+
+      <!-- Blog Content -->
+      <div class="form-group">
+        <label for="blog-content">Write Your Blog</label>
+        <textarea id="blog-content" name="blog-content" placeholder="Start writing your blog here..." required></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="submit-btn">Publish Blog</button>
+
+    </form>
+
+  </div>
+
+</body>
+</html>
